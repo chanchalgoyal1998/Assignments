@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean class="com.yash.itemlist.Item" id="i1">
+		<property name="itemId" value="1"></property>
+		<property name="itemName" value="Bag"></property>
+	</bean>
+
+	<bean class="com.yash.itemlist.Item" id="i2">
+		<property name="itemId" value="2"></property>
+		<property name="itemName" value="Pencil"></property>
+	</bean>
+
+	<bean class="com.yash.itemlist.Item" id="i3">
+		<property name="itemId" value="3"></property>
+		<property name="itemName" value="eraser"></property>
+	</bean>
+
+	<bean class="com.yash.itemlist.Items" id="items">
+		<property name="items">
+			<list>
+			<ref bean="i1"/>
+			<ref bean="i2"/>
+			<ref bean="i3"/>
+			</list>
+		</property>
+	</bean>
+
+
+</beans>
