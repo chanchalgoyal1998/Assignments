@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans   
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-3.1.xsd"
+>
+	<bean class=" com.yash.movies.Movie" name="movie1">
+	<property name="moviename" value="haste rho"></property>
+	<property name="movietime" value="6-9Pm"></property>
+	<property name="ticketprice" value="700"></property>
+	<property name="moneyearn" value="110"></property>
+	</bean>
+
+	<bean class=" com.yash.movies.Movie" name="movie2">
+	<property name="moviename" value="Bhool bhulaiyaa 2"></property>
+	<property name="movietime" value="9-12pm"></property>
+	<property name="ticketprice" value="250"></property>
+	<property name="moneyearn" value="40"></property>
+	</bean>
+	
+	<bean class="com.yash.movies.Movie" name="movie3">
+	<property name="moviename" value="Samrat Prithviraj"></property>
+	<property name="movietime" value="6-9pm"></property>
+	<property name="ticketprice" value="250"></property>
+	<property name="moneyearn" value="210"></property>
+	</bean>
+	
+	<bean class=" com.yash.movies.Movie" name="movie4">
+	<property name="moviename" value="Mission Mangal"></property>
+	<property name="movietime" value="9-12pm"></property>
+	<property name="ticketprice" value="250"></property>
+	<property name="moneyearn" value="240"></property>
+	</bean>
+	
+     <bean class=" com.yash.movies.Movies" name="movielist">
+	<property name="movies">
+	 <list>
+	 <ref bean="movie1"/>
+	 <ref bean="movie2"/>
+	 <ref bean="movie3"/>
+	 <ref bean="movie4"/>
+	 </list>
+	</property>	
+	</bean>
+	
+</beans>
