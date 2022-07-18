@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans   
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-3.1.xsd"
+>
+
+	<bean class="com.yash.employees.Employee" name="emp1">
+	<property name="eid" value="101"/>
+	<property name="name" value="Abc"/>
+	<property name="salary" value="42000"/>
+	<property name="department" value="salse"/>
+	</bean>
+	
+		<bean class="com.yash.employees.Employee" name="emp2">
+	<property name="eid" value="102"/>
+	<property name="name" value="Ram"/>
+	<property name="salary" value="80000"/>
+	<property name="department" value="IT"/>
+	</bean>
+	
+		<bean class="com.yash.employees.Employee" name="emp3">
+	<property name="eid" value="103"/>
+	<property name="name" value="Mohan"/>
+	<property name="salary" value="50000"/>
+	<property name="department" value="ITSM"/>
+	</bean>
+	
+		<bean class="com.yash.employees.Employee" name="emp4">
+	<property name="eid" value="104"/>
+	<property name="name" value="rama"/>
+	<property name="salary" value="30000"/>
+	<property name="department" value="ITSM"/>
+	</bean>
+	
+		<bean class="com.yash.employees.Employee" name="emp5">
+	<property name="eid" value="105"/>
+	<property name="name" value="Aadarsh"/>
+	<property name="salary" value="70000"/>
+	<property name="department" value="salseforce"/>
+	</bean>
+	
+	<bean class="com.yash.employees.Employee" name="emp6">
+	<property name="eid" value="107"/>
+	<property name="name" value="Mahima"/>
+	<property name="salary" value="60000"/>
+	<property name="department" value="salseforce"/>
+	</bean>
+	
+	<bean class="com.yash.employees.Employees" name="elist">
+	<property name="emplist">
+	<list>
+	<ref bean="emp1" />
+    <ref bean="emp2" />
+	<ref bean="emp3" />
+	<ref bean="emp4" />
+	<ref bean="emp5" />
+	<ref bean="emp6" />
+	</list>
+	</property>
+	</bean>
+	
+</beans>
