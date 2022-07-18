@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	
+<!-- <bean class="com.yash.differentShapes.Shape" id="shape"></bean> -->
+ 
+<bean class="com.yash.differentBtw2Cities.City" id="c1">
+<property name="city1" value="Indore"/>
+<property name="city2" value="Bhopal"/>
+<property name="distance" value="607.7"/>
+</bean> 
+
+<bean class="com.yash.differentBtw2Cities.City" id="c2">
+<property name="city1" value="Indore"/>
+<property name="city2" value="Pune"/>
+<property name="distance" value="607.7" />
+</bean> 
+
+<bean class="com.yash.differentBtw2Cities.City" id="c3">
+<property name="city1" value="Indore"/>
+<property name="city2" value="Pune"/>
+<property name="distance" value="1339.7"/>
+</bean> 
+
+
+<bean class="com.yash.differentBtw2Cities.CityList" id="cl">
+<property name="citylist">
+<list>
+<ref bean="c1"/>
+<ref bean="c2"/>
+<ref bean="c3"/>
+</list>
+</property>
+</bean> 
+
+</beans>
